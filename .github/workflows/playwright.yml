@@ -27,6 +27,7 @@ jobs:
  
       - name: Run Playwright tests
         run: npx playwright test
+        working-directory: ./apitesting
  
       - name: Upload HTML report
         if: always()
