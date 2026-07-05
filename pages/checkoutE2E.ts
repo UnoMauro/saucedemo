@@ -1,10 +1,7 @@
-import { Page } from "@playwright/test";
+import { BasePage } from "./BasePage";
 
-export class checkout {
- private page: Page
-constructor (page: Page){
-    this.page = page
-}
+
+export class checkout extends BasePage {
 
 async goCart(){
     await this.page.locator ('#shopping_cart_container').click()

@@ -1,10 +1,7 @@
-import { Page } from "@playwright/test";
+import { BasePage } from "./BasePage";
 
-export class inventoryPage {
- private page: Page
-constructor (page: Page){
-    this.page = page
-}
+
+export class inventoryPage extends BasePage{
 
  async addFirstItemtoCart (){
     await this.page.getByRole('button', {name: 'Add to cart'}).first().click()
