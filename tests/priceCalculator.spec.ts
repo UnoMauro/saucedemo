@@ -1,3 +1,4 @@
+//Note para PR//
 import {calculateTotal, calculateTax, CalculateGrandTotal} from '../utils/priceCalculator'
 import {test, expect} from '@playwright/test'
 
