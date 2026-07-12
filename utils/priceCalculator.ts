@@ -9,7 +9,7 @@ export function calculateTax (total: number []): number {
     return total * tax_rate
 }
 
-export function CalculateGrandTotal (prices: number []): number {
+export function calculateGrandTotal (prices: number []): number {
     const total = calculateTotal(prices)
     const tax = calculateTax (total)
     return total + tax
