@@ -11,8 +11,7 @@ test ("Cart total match", async ({page}) =>  {
     
     //Agrega 5 items
     const addButtons = await page.getByRole('button', {name: "Add to cart"})
-    const count = await addButtons.count()
-    for (let i = 0; i < count; i++)
+    for (let i = 0; i < 5; i++)
     {
         await addButtons.first().click()
     }
